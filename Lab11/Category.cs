@@ -17,7 +17,8 @@ namespace Lab11
             Console.WriteLine($"We have the following {cat} movies: ");
             List<Movies> subList = movieList.Where(x => x.category == catSelect).ToList();
             var moviesInAscOrder = subList.OrderBy(s => s.title);
-            foreach (var item in moviesInAscOrder)            {
+            foreach (var item in moviesInAscOrder)           
+            {
                 System.Console.WriteLine(item.title);
             }
             Console.WriteLine();
